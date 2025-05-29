@@ -28,11 +28,6 @@
       margin-bottom: 15px;
       text-align: center;
     }
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: 600;
-    }
     input, textarea {
       width: 100%;
       padding: 10px;
@@ -40,6 +35,7 @@
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 1em;
+      box-sizing: border-box;
     }
     button {
       margin-top: 20px;
@@ -75,17 +71,11 @@
 
   <div class="container">
     <h1>Contact Us</h1>
-    <form action="http://localhost:3000/contact" method="POST">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
+    <form action="https://formsubmit.co/venupatel2535@gmail.com" method="POST">
+      <input type="text" name="name" required placeholder="Your Name" />
+      <input type="email" name="email" required placeholder="Your Email" />
+      <textarea name="message" required placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
     </form>
   </div>
 
